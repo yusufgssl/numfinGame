@@ -35,19 +35,22 @@ a = 0
 b = 0
 
 while a == b:
-    minValue = int(input("Enter a minimum value: "))
-    maxValue = int(input("Enter a maximum value: "))
-    if minValue < maxValue:
-        print("ಠ_ಠ Let's see if you are a wizard ಠ_ಠ")
-        a + 1
-        break
+    minValue = input("Enter a minimum value: ")
+    maxValue = input("Enter a maximum value: ")
+    if minValue.isdigit() and maxValue.isdigit() == 1:
+        if int(minValue) < int(maxValue):
+            print("ಠ_ಠ Let's see if you are a wizard ಠ_ಠ")
+            a + 1
+            break
+        else:
+            if int(minValue) > int(maxValue):
+                print("The minimum value cannot be greater than the maximum value.")
+            elif int(minValue) == int(maxValue):
+                print("The minimum value cannot be equal to the maximum value.")
     else:
-        if minValue > maxValue:
-            print("The minimum value cannot be greater than the maximum value.")
-        elif minValue == maxValue:
-            print("The minimum value cannot be equal to the maximum value.")
+        print("Please just enter the number.")
 
-comnum = random.randint(minValue, maxValue)
+comnum = random.randint(int(minValue), int(maxValue))
 
 while heart > 0:
     heart += -1
