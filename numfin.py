@@ -51,24 +51,27 @@ comnum = random.randint(minValue, maxValue)
 
 while heart > 0:
     heart += -1
-    pnum = int(input("Enter a number: "))
-
-    if pnum == comnum:
-        print(f"You Won. The number was {comnum}.")
-        break
-    elif comnum < pnum:
-        print("Decrase the number.")
-        if heart == 0:
-            print(f"You lose. The number was {comnum}.")
+    pnum = input("Enter a number: ")
+    if pnum.isdigit() == 1:
+        if int(pnum) == comnum:
+            print(f"You Won. The number was {comnum}.")
+            break
+        elif comnum < int(pnum):
+            print("Decrase the number.")
+            if heart == 0:
+                print(f"You lose. The number was {comnum}.")
+            else:
+                a = heart-1
+                print(f"You have {a+1} heart left.")
         else:
-            a = heart-1
-            print(f"You have {a+1} heart left.")
+            print("Incrase the number.")
+            if heart == 0:
+                print(f"You lose. The number was {comnum}.")
+            else:
+                a = heart-1
+                print(f"You have {a+1} heart left.")
     else:
-        print("Incrase the number.")
-        if heart == 0:
-            print(f"You lose. The number was {comnum}.")
-        else:
-            a = heart-1
-            print(f"You have {a+1} heart left.")
+        print("Please just enter the number.")
+        heart += 1
 
 input("Press 'Enter' to exit the game.")
