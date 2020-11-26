@@ -7,9 +7,9 @@ print("-1 heart will decrease for every wrong answer.")
 print("-Let's Start!!!")
 print("Choose the difficulty level;")
 print("Extreme => 1 heart")
-print("Hard => 3 heart")
-print("Medium => 6 heart")
-print("Easy => 10 heart")
+print("Hard    => 3 heart")
+print("Medium  => 6 heart")
+print("Easy    => 10 heart")
 
 i = 0
 while i == 0:
