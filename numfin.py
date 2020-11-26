@@ -48,7 +48,7 @@ while a == b:
             elif int(minValue) == int(maxValue):
                 print("The minimum value cannot be equal to the maximum value.")
     else:
-        print("Please just enter the number.")
+        print("Enter only number.")
 
 comnum = random.randint(int(minValue), int(maxValue))
 
@@ -74,7 +74,7 @@ while heart > 0:
                 a = heart-1
                 print(f"You have {a+1} heart left.")
     else:
-        print("Please just enter the number.")
+        print("Enter only number.")
         heart += 1
 
 input("Press 'Enter' to exit the game.")
