@@ -51,7 +51,7 @@ while k == 0:
                 elif int(minValue) == int(maxValue):
                     print("The minimum value cannot be equal to the maximum value.")
         else:
-            print("Enter only an integer.")
+            print("Enter only a positive integer.")
 
     comnum = random.randint(int(minValue), int(maxValue))
 
@@ -77,7 +77,7 @@ while k == 0:
                     a = heart-1
                     print(f"You have {a+1} heart left.")
         else:
-            print("Enter only an integer.")
+            print("Enter only a positive integer.")
             heart += 1
 
     again = input("Press 'Q' to quit game, press 'P' to play again: ").lower().lstrip().rstrip()
