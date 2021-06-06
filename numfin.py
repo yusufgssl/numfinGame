@@ -63,14 +63,14 @@ while k == 0:
                 print(f"You Won. The number was {comnum}.")
                 break
             elif comnum < int(pnum):
-                print("Decrase the number.")
+                print("Decrease the number.")
                 if heart == 0:
                     print(f"You lose. The number was {comnum}.")
                 else:
                     a = heart-1
                     print(f"You have {a+1} heart left.")
             else:
-                print("Incrase the number.")
+                print("Increase the number.")
                 if heart == 0:
                     print(f"You lose. The number was {comnum}.")
                 else:
